@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+	background-color: hsl(232, 100%, 40%);
+	border-radius: 1vh;
+	box-shadow: inset;
+	background-image: image-set
+		("./images/denim_3D.jpg");
+	  background-repeat: no-repeat;
+  	/*width: 200px;*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+	font-size: x-small;
+	font-weight: inherit;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: hsla(232, 100%, 40%, 0.438);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.head {
+	max-height: 25px;
+	width: auto;
+	top: 43px;
+	position: absolute;
+	left: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .hr {
+  top: 5px;
+  width: fit-content;
+} */
+
+.top-left {
+	position: fixed;
+	padding: 10px;
+	display: flex;
+	justify-content: left;
+	width: 150px;
+	left: 0;
+	object-fit: contain;
+	top: 5px;
+	margin: 0 5px;
+}
+
+.number {
+	text-align: left;
+	font-size: small;
 }

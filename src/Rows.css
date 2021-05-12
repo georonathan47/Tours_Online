@@ -1,0 +1,22 @@
+.main_container {
+  background-color: hsla(232, 100%, 40%, 0.65);
+  max-height: fit-content;
+  max-width: none;
+  object-fit: inherit;
+}
+
+.small {
+  color: black;
+  background-color: rgb(209, 120, 18);
+  margin: 10px;
+  height: 100px;
+  padding-left: 2.5rem;
+}
+
+.small1 {
+  color: whitesmoke;
+  background-color: rgba(178, 218, 32, 0.89);
+  margin: 10px;
+  height: 125px;
+  padding-left: 2.5rem;
+}
