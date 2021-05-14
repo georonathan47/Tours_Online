@@ -1,0 +1,14 @@
+.leading {
+  opacity: 0.75;
+}
+
+.container{
+  width: 100vw;
+  height: 85vh;
+  background-color: hsl(232, 100%, 40%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: 25vw;
+  overflow-x: unset;
+}

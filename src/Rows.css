@@ -20,3 +20,82 @@
   height: 125px;
   padding-left: 2.5rem;
 }
+
+.contacts{
+  text-align: left;
+  width: 35vw;
+  height: fit-content;
+  left: 0;
+  bottom: 0;
+  margin-top: 15vh;
+  z-index: 1.5;
+}
+
+.info {
+  font-size: medium;
+  color: #d4af37;
+  left: 0;
+  bottom: 0;
+}
+
+.info > address {
+  padding-left: 20px;
+}
+
+.details > address {
+  line-height: 20px;
+  font-size: medium;
+  color: #d4af37;
+  padding-left: 20px;
+  bottom: 0;
+  width: calc(20vw + 1.5rem);
+}
+
+#s4{
+  top: 15px;
+  background-color: #fff;
+  height: fit-content;
+  max-height: 20em;
+  padding: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: hsla(232, 100%, 40%, 0.616)
+}
+
+hr{
+  width: fit-content;
+}
+
+.line_height{
+  height: 20px;
+  color: black;
+}
+
+.forms {
+  padding: calc(2rem +  5px);
+  margin-left: 50vw;
+  background-color: rgba(0, 0, 0, 0.493);
+  color: whitesmoke;
+  font-style: italic;
+  height: fit-content;
+  width: fit-content;
+}
+
+.email {
+  height: 25vh;
+  width: 30vw;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.button{
+  color: hsla(232, 100%, 40%, 0.616);
+  background-color: #d4af37;
+  border-radius: 35px;
+	-moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  font-weight: medium;
+  font-size:  x-small;
+}

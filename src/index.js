@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from "./screens/navbar";
 import Rows from "./Rows.js"
+// import { Link, animateScroll as scroll } from "react-scroll";
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
-    <App />
+    
     <Rows />
   </React.StrictMode>,
   document.getElementById('root')
