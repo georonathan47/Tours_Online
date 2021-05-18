@@ -1,0 +1,22 @@
+.normal {
+  padding-right: 35px;
+  background-color: hsla(232, 100%, 40%, 0.616);
+}
+
+.about {
+  padding: 15px;
+  box-shadow: inset;
+  width: 50px;
+}
+
+.paragraph {
+  padding: 15px;
+  max-width: 35vw;
+  height: fit-content;
+  margin: auto 17px auto 17px;
+  font-size: large;
+}
+
+h2{
+  color: #fff;
+}

@@ -76,6 +76,7 @@ a {
 
 .list_contents:hover {
 	background-color: hsl(232, 100%, 40%);
+	color: #d4af37;
 }
 
 ul > li > a:hover{
@@ -102,4 +103,8 @@ ul > li > a:hover{
 		bottom: 0;
 		margin: 10px;
 	}
+}
+
+.about {
+	
 }

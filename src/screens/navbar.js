@@ -23,15 +23,16 @@ function navbar() {
 		<div className="nav">
 			<div className={`nav ${show && "nav_fade"}`}>
 					<div className="nav_contents">
-						<img className="nav_logo" src={denim} alt="Denim" />
+						<img className="nav_logo" src={denim} alt="Denim" onClick="#home"/>
 					<h1 className="number">Tel: +233 (0) 24 855 9331</h1>
 					<ul>
-							<li className="list_contents"><a href="contact">Contact</a></li>
+							<li className="list_contents"><a href="contact" target="_self">Contact</a></li>
 							<li className="list_contents"><a href="#tours">Virtual Tours</a></li>
-							<li className="list_contents about"><a href="#about">About Us</a></li>
+						<li className="list_contents about"><a href="#about">About Us</a></li>
 							<li className="list_contents"><a href="#home">Home</a></li>
 						</ul>
 					</div>
+					
 				</div>
 				
 			</div>

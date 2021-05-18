@@ -1,0 +1,73 @@
+.page{
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+#s4{
+  top: 15px;
+  background-color: #fff;
+  height: fit-content;
+  max-height: 20em;
+  padding: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: hsla(232, 100%, 40%, 0.616)
+}
+
+hr{
+  width: fit-content;
+  height: 20px;
+  color: black;
+}
+
+.forms {
+  padding: calc(2rem +  5px);
+  margin-left: 50vw;
+  background-color: #0000007e;
+  position: absolute;
+  top: 140vh;
+  left: 10vw;
+  bottom: 2px;
+  border-radius: 35px;
+	-moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  color: whitesmoke;
+  font-style: italic;
+  height: fit-content;
+  width: fit-content;
+}
+
+.email {
+  height: 25vh;
+  width: 30vw;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.button{
+  cursor: pointer;
+  color: hsla(232, 100%, 40%, 0.616);
+  background-color: #d4af37;
+  border-radius: 35px;
+	-moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  bottom: 20px;
+  font-weight: bolder;
+  font-size:  medium;
+  padding: 7px 14px;
+  margin: auto 170px auto 170px ;
+}
+
+h2{
+  color: hsl(232, 100%, 40%);
+  font-size: large
+}
+
+address {
+  color: #d4af37;
+}
+
+a > address {
+  color: hsl(232, 100%, 40%);
+}

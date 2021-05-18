@@ -1,18 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 import Navbar from "./screens/navbar";
-import Rows from "./Rows.js"
-// import { Link, animateScroll as scroll } from "react-scroll";
+import Home from "./screens/Home";
+import Contacts from "./Contacts";
+import About from "./About";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Navbar/>
-    
-    <Rows />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<Navbar />
+		<Home />
+		<About />
+		<Contacts />
+	</React.StrictMode>,
+	document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

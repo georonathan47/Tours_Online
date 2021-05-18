@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-// import denim from "../images/logo.png";
 
 function Home() {
 	return (
