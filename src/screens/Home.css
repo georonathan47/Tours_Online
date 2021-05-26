@@ -1,16 +1,59 @@
-*{
-  scroll-behavior: smooth;
+/* carousel */
+#carousel {
+  box-shadow: 0 1rem 1rem rgba(0, 27, 204, 0.377);
 }
 
-.leading {
-  opacity: 0.75;
+.carousel-inner {
+  max-height: 37rem !important;
 }
 
-.container{
-  width: 100vw;
-  height: 85vh;
-  background-color: hsl(232, 100%, 40%);
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow-x: unset;  
+/* carousel transition speed */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+  transition: transform 1.2s ease;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+.bg-custom{
+  background-color: rgba(0,0,0,.4);
+  color: #fff;
+  border-radius: 2rem;
+}
+
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  text-shadow: .15rem .15rem .4rem rgba(0,0,0,1);
+}
+
+.border-primary{
+  border-top: .2rem solid hsl(232, 100%, 40%) !important;
+}
+
+.carousel-caption h3 {
+  font-size: 1.8rem;
+  text-shadow: .15rem .15rem .2rem rgba(0,0,0,1);
+}
+
+.btn-lg{
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: .05rem;
+  border-width: medium;
+}
+
+.btn-dander{
+  background-color: #ac2615;
+  border: .05rem solid #ac2615;
+}
+
+.btn-primary{
+  background-color: #4981b3;
+  border: .05rem solid #4981b3;
 }

@@ -1,41 +1,36 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./navbar.css";
+import "./Home"
 import denim from "../images/logo.png";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FaPhone } from "react-icons/fa";
+
 function navbar() {
-	const [show, handleShow] = useState(false);
-
-	const transitionNavBar = () => {
-		if (window.screenY > 100) {
-			handleShow(true);
-		} else {
-			handleShow(false);
-		}
-	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", transitionNavBar);
-		return () => window.removeEventListener("scroll", transitionNavBar);
-	}, []);
-
 	return (
-		<div className="nav">
-			<div className={`nav ${show && "nav_fade"}`}>
-					<div className="nav_contents">
-						<img className="nav_logo" src={denim} alt="Denim" onClick="#home"/>
-					<h1 className="number">Tel: +233 (0) 24 855 9331</h1>
-					<ul>
-							<li className="list_contents"><a href="contact" target="_self">Contact</a></li>
-							<li className="list_contents"><a href="#tours">Virtual Tours</a></li>
-						<li className="list_contents about"><a href="#about">About Us</a></li>
-							<li className="list_contents"><a href="#home">Home</a></li>
-						</ul>
-					</div>
-					
+		<nav className="navbar navbar-light navbar-expand-lg">
+			<div className="container">
+				{/* logo */}
+				<a href="./Home" className="navbar-brand">
+					<img src={denim} alt="Logo" />
+				</a>
+				<FaPhone className="phone"/><p>Tel: +233 24 855 9331</p>
+				{/* Hamburger Menu */}
+				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div className="space ml-auto"/>
+				{/* navbar menu */}
+				<div className="collapse navbar-collapse" id="navbarResponsive">
+					<ul className="navbar-nav ml-auto">
+						<li className="nav-item"><a href="./Home.js" className="nav-link">Home</a></li>
+						<li className="nav-item"><a href="a" className="nav-link">About</a></li>
+						<li className="nav-item"><a href="ab" className="nav-link">Virtual Tours</a></li>
+						<li className="nav-item"><a href="ac" className="nav-link">Contact</a></li>
+					</ul>
 				</div>
-				
 			</div>
+		</nav>
 	);
 }
 

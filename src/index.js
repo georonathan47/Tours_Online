@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
+import "./components/AwesomeIcons";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./screens/navbar";
 import Home from "./screens/Home";
 import Contacts from "./Contacts";
 import About from "./About";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
 	<React.StrictMode>

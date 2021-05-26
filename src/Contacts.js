@@ -1,13 +1,15 @@
 import "./Contacts.css";
 import React from "react";
+import Forms from "./Form.js"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Contacts() {
 	return (
-		<div className="page">
-			<div className="small2" id="s4">
-				<span className="#contacts">
-					<div className="info">
-            <h2>Address: </h2>
+		<div className="jumbotron py-5 mb-0">
+			<div className="container">
+				<div className="row align-items-start">
+					<div className="col w-100">
+						<h2>Address: </h2>
 						<address>
 							Denim Travel & Tour
 							<br /> Inside Biney Plaza, Koforidua
@@ -15,9 +17,9 @@ function Contacts() {
 							<br /> West Africa
 						</address>
 					</div>
-					<hr className="line_height" />
-					<div className="details">
-            <h2>Mailing:</h2>
+
+					<div className="col w-100">
+						<h2>Mailing:</h2>
 						<address>
 							P. O. BOX KF 550,
 							<br />
@@ -32,28 +34,12 @@ function Contacts() {
 							<br />
 						</address>
 					</div>
-					<div className="forms">
-						<form action="" method="post">
-							<label className="label" for="email">
-								Send us a message!
-							</label>
-							<br />
-							<br />
-							<input
-								className="email"
-								value="Type your message here!"
-								name="Message"
-								type="text"
-							></input>
-							<br />
-							<br />
-							<br />
-							<button type="submit" className="button">
-								Submit
-							</button>
-						</form>
+					{/* </div> */}
+
+					<div className="col w-100">
+						<Forms />
 					</div>
-				</span>
+				</div>
 			</div>
 		</div>
 	);
