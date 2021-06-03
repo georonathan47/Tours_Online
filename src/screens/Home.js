@@ -12,13 +12,13 @@ function Home() {
 		<div
 			id="carousel"
 			className="carousel slide"
-			data-ride="carousel"
-			data-interval="6500"
+			data-bs-ride="carousel"
+			// data-interval="6500"
 		>
 			<div className="carousel-inner">
 				{/* contents */}
 				<div className="carousel-item active">
-					<img src={vr} alt="" className="w-100" />
+					<img src={vr} alt="" className="w-100 d-block" />
 					<div className="carousel-caption">
 						<div className="container">
 							<div className="row justify-content-center">
@@ -40,7 +40,7 @@ function Home() {
 				</div>
 
 				<div className="carousel-item">
-					<img src={denims} alt="" className="w-100" />
+					<img src={denims} alt="" className="w-100 d-block" />
 					<div className="carousel-caption">
 						<div className="container">
 							<div className="row justify-content-end">
@@ -59,7 +59,7 @@ function Home() {
 					</div>
 
 					<div className="carousel-item">
-						<img src={logo} alt="" className="w-100" />
+						<img src={logo} alt="" className="w-100 d-block" />
 						<div className="carousel-caption">
 						<div className="container">
 							<div className="row justify-content-start">
@@ -80,28 +80,28 @@ function Home() {
 					</div>
 
 					<div className="carousel-item">
-						<img src={vr} alt="" className="w-100" />
+						<img src={vr} alt="" className="w-100 d-block" />
 					</div>
 				</div>
-				{/* next and previous buttons */}
-				<a
-					href="#carousel"
+				{/* Button controls */}
+				<button
+					type="button"
 					className="carousel-control-prev"
-					role="button"
+					data-bs-target="#carousel"
 					data-slide="prev"
 				>
 					<FaChevronLeft size="2em" color="black" />
-				</a>
+				</button>
 
-				<a
+				<button
 					href="#carousel"
 					className="carousel-control-next"
-					role="button"
+					type="button"
+					data-bs-target="#carousel"
 					data-slide="next"
 				>
-					{/* <FontAwesomeIcon icon="next" /> */}
 					<FaChevronRight size="2em" color="black"/>
-				</a>
+				</button>
 				
 			</div>
 

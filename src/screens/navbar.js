@@ -1,10 +1,11 @@
 import React from "react";
 import "./navbar.css";
-import "./Home"
+import home from "./Home"
 import denim from "../images/logo.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaPhone } from "react-icons/fa";
+import Contacts from "../Contacts";
 
 function navbar() {
 	return (
@@ -14,19 +15,19 @@ function navbar() {
 				<a href="./Home" className="navbar-brand">
 					<img src={denim} alt="Logo" />
 				</a>
-				<FaPhone className="phone"/><p>Tel: +233 24 855 9331</p>
+				<FaPhone className="phone"/><text>Tel: +233 24 855 9331</text>
 				{/* Hamburger Menu */}
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 					<span className="navbar-toggler-icon"></span>
 				</button>
-				<div className="space ml-auto"/>
+				<div className="space mr-5"/>
 				{/* navbar menu */}
 				<div className="collapse navbar-collapse" id="navbarResponsive">
-					<ul className="navbar-nav ml-auto">
-						<li className="nav-item"><a href="./Home.js" className="nav-link">Home</a></li>
-						<li className="nav-item"><a href="a" className="nav-link">About</a></li>
-						<li className="nav-item"><a href="ab" className="nav-link">Virtual Tours</a></li>
-						<li className="nav-item"><a href="ac" className="nav-link">Contact</a></li>
+					<ul className="nav ">
+						<li className="nav-item"><a href="home" className="nav-link active">Home</a></li>
+						<li className="nav-item"><a href="#" className="nav-link">About</a></li>
+						<li className="nav-item"><a href="#" className="nav-link">Virtual Tours</a></li>
+						<li className="nav-item"><a href={{Contacts}} className="nav-link">Contact</a></li>
 					</ul>
 				</div>
 			</div>

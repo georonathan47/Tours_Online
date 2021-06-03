@@ -14,6 +14,10 @@
   transition: transform 1.2s ease;
 }
 
+.carousel-item{
+  transition: transform 1.2s ease;
+}
+
 .carousel-caption {
   position: absolute;
   top: 50%;

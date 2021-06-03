@@ -8,6 +8,8 @@ import Navbar from "./screens/navbar";
 import Home from "./screens/Home";
 import Contacts from "./Contacts";
 import About from "./About";
+import Scroll from "./Scroll"
+import Footer from "./Footer"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,7 +18,9 @@ ReactDOM.render(
 		<Navbar />
 		<Home />
 		<About />
+		<Scroll showBelow={400} />
 		<Contacts />
+		<Footer />
 	</React.StrictMode>,
 	document.getElementById("root")
 );

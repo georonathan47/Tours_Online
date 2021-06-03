@@ -3,8 +3,18 @@
 
 .textt{
   font-size: 1.5rem;
-  color: #d4af37;
+  color: #000;
   font-style: italic;
   font-family: 'Stint Ultra Condensed', cursive;
-  /* background-color: hsla(232, 100%, 40%, 0.616); */
+  font-weight: 600;
+  text-align: justify;
+}
+
+.text{
+  font-size: 3rem;
+  color: #001bcc;
+  font-style: italic;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-weight: 900;
+  text-align: center;
 }
