@@ -11,11 +11,11 @@ function Form() {
 
 	return (
 		<form className="w-100" onSubmit={handleSubmit}>
-			<label className="mr-3" htmlFor="email">Email: </label>
-			<input className="textbox" id="email" type="email" name="email" />
-      <br />
 			<label className="mr-3" htmlFor="email">Name: </label>
 			<input className="textbox" id="email" type="text" name="text" />
+      <br />
+			<label className="mr-3" htmlFor="email">Email: </label>
+			<input className="textbox" id="email" type="email" name="email" />
       <br />
 			<label className="mr-3" htmlFor="email">Country: </label>
 			<input className="textbox" id="email" type="text" name="text" />

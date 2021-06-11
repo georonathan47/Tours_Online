@@ -3,110 +3,77 @@ import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import denims from "../images/blacvr.jpg";
 import logo from "../images/blaq_vr.jpg";
-import vr from "../images/hammer.jpg";
-
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
+import vr from "../images/Black.jpg";
+import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
 
 function Home() {
 	return (
-		<div
-			id="carousel"
-			className="carousel slide"
-			data-bs-ride="carousel"
-			// data-interval="6500"
-		>
-			<div className="carousel-inner">
-				{/* contents */}
-				<div className="carousel-item active">
-					<img src={vr} alt="" className="w-100 d-block" />
-					<div className="carousel-caption">
-						<div className="container">
-							<div className="row justify-content-center">
-								<div className="col-8 bg-custom d-none d-lg-block py-3 px-0">
-									<h1>Denim Travel and Tour</h1>
-									<div className="border-top border-primary w-50 mx-auto my-3"></div>
-									<h3 className="pd-3">Lorem ipsum ...</h3>
-									{/* change from virtual  to something else later*/}
-									<a href="#carousel" className="btn btn-danger btn-lg mr-2">
-										View Demo
-									</a>
-									<a href="#carousel" className="btn btn-primary btn-lg ml-2">
-										Start Tour
-									</a>
-								</div>
+		<Carousel>
+			<Carousel.Item interval={6500000} className="active">
+				<img className="d-block w-100" src={vr} alt="First slide" />
+				<Carousel.Caption className="carousel-caption ">
+					<div className="container">
+						<div className="row justify-content-center">
+							<div className="col-8 bg-custom d-none d-lg-block py-3 px-0">
+								<h3 className="pd-3">Denim Travel and Tour</h3>
+								<div className="border-top border-primary w-50 mx-auto my-3" />
+								<p className="pd-4 lead">
+									Nulla vitae elit libero, a pharetra augue mollis.
+								</p>
+								<Button
+									className="btn btn-primary mr-2"
+									variant="primary"
+									size="sm"
+								>
+									Contact Us
+								</Button>
 							</div>
 						</div>
 					</div>
-				</div>
+				</Carousel.Caption>
+			</Carousel.Item>
 
-				<div className="carousel-item">
-					<img src={denims} alt="" className="w-100 d-block" />
-					<div className="carousel-caption">
-						<div className="container">
-							<div className="row justify-content-end">
-								<div className="col-5 bg-custom d-none d-lg-block py-3 px-0 pr-3">
-									<h3 className="pd-3">Lorem ipsum ...</h3>
-
-									<p className="lead pb-4">
-										Travel around the world with us...
-									</p>
-									<a href="#carousel" className="btn btn-danger btn-lg">
-										Contact Us
-									</a>
-								</div>
+			<Carousel.Item interval={6500}>
+				<img className="d-block w-100" src={denims} alt="Second slide" />
+				<Carousel.Caption className="carousel-caption ">
+					<div className="container">
+						<div className="row justify-content-start">
+							<div className="col-8 bg-custom d-none d-lg-block py-3 px-0">
+								<h3 className="pd-3">Travel in ghana with us</h3>
+								<div className="border-top border-primary w-50 mx-auto my-3" />
+								<p className="pd-4 lead">
+									Nulla vitae elit libero, a pharetra augue mollis.
+								</p>
+								<Button
+									className="btn btn-danger mr-2"
+									variant="danger"
+									size="sm"
+								>
+									View Demo
+								</Button>
 							</div>
 						</div>
 					</div>
-
-					<div className="carousel-item">
-						<img src={logo} alt="" className="w-100 d-block" />
-						<div className="carousel-caption">
-						<div className="container">
-							<div className="row justify-content-start">
-								<div className="col-7 bg-custom d-none d-lg-block py-3 px-0 pl-3">
-									<h3 className="pd-3">Lorem ipsum ...</h3>
-
-									<p className="lead pb-4">
-										Travel around the world with us...
-									</p>
-									<a href="#carousel" className="btn btn-primary btn-lg">
-										Contact Us
-									</a>
-								</div>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item interval={6500}>
+				<img className="d-block w-100 " src={logo} alt="Third slide" />
+				<Carousel.Caption className="carousel-caption">
+					<div className="container">
+						<div className="row justify-content-end">
+							<div className="col-8 bg-custom d-none d-lg-block py-3 px-0">
+								<h3 className="pd-3">Travel in ghana with us</h3>
+								<div className="border-top border-primary w-50 mx-auto my-3" />
+								<p className="pd-3">
+									Nulla vitae elit libero, a pharetra augue mollis.
+								</p>
 							</div>
 						</div>
 					</div>
-
-					</div>
-
-					<div className="carousel-item">
-						<img src={vr} alt="" className="w-100 d-block" />
-					</div>
-				</div>
-				{/* Button controls */}
-				<button
-					type="button"
-					className="carousel-control-prev"
-					data-bs-target="#carousel"
-					data-slide="prev"
-				>
-					<FaChevronLeft size="2em" color="black" />
-				</button>
-
-				<button
-					href="#carousel"
-					className="carousel-control-next"
-					type="button"
-					data-bs-target="#carousel"
-					data-slide="next"
-				>
-					<FaChevronRight size="2em" color="black"/>
-				</button>
-				
-			</div>
-
-		</div>
-
+				</Carousel.Caption>
+			</Carousel.Item>
+		</Carousel>
 	);
 }
 

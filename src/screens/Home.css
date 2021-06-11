@@ -29,10 +29,14 @@
   background-color: rgba(0,0,0,.4);
   color: #fff;
   border-radius: 2rem;
+  height: 28.5vh;
+  max-height: 28.5vh;
+  min-height: 28.5vh;
+  margin: 1.2rem;
 }
 
-.carousel-caption h1 {
-  font-size: 2.5rem;
+.carousel-caption h3 {
+  font-size: 1.5rem;
   text-shadow: .15rem .15rem .4rem rgba(0,0,0,1);
 }
 
@@ -40,9 +44,9 @@
   border-top: .2rem solid hsl(232, 100%, 40%) !important;
 }
 
-.carousel-caption h3 {
-  font-size: 1.8rem;
-  text-shadow: .15rem .15rem .2rem rgba(0,0,0,1);
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: .25rem .25rem .4rem rgba(0,0,0,1);
 }
 
 .btn-lg{
@@ -52,12 +56,22 @@
   border-width: medium;
 }
 
-.btn-dander{
+.btn-danger{
   background-color: #ac2615;
   border: .05rem solid #ac2615;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .btn-primary{
   background-color: #4981b3;
   border: .05rem solid #4981b3;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  border-radius: 2rem !important;
 }

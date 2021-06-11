@@ -31,7 +31,7 @@ function About() {
 					<p className="mb-4 textt">Denim Travel and Tour is a registered and licensed travel and tour company located in Koforidua, Ghana. Ghana Tours Online is a subsidiary project of Denim Travel and Tour which focuses on showing virtual Ghana tours online to everyone anywhere in the world. COVID-19 has created a huge gap in the tourism	industry in the world where people cannot travel to their favorite tourist destinations. Ghana Tours Online solves this problem by providing virtual tours of these tourist attractions on our website which can be accessed anywhere in the world without traveling.</p>
 				</div>
 				
-				<div className="col-lg-8 ml-3">
+				<div className="col-lg-8">
 					<img src={denim} alt="" className="w-100" />
 				</div>
 			</div>

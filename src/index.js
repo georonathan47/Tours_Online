@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./components/AwesomeIcons";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./screens/navbar";
@@ -18,7 +17,7 @@ ReactDOM.render(
 		<Navbar />
 		<Home />
 		<About />
-		<Scroll showBelow={400} />
+		<Scroll showBelow={600} />
 		<Contacts />
 		<Footer />
 	</React.StrictMode>,
